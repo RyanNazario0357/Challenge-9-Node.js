@@ -60,6 +60,7 @@ const questions = [
                 console.log('Please explain how i can use it.');
                 return false;
             }
+            }
             },
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
