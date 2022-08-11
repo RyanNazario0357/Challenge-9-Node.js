@@ -29,7 +29,20 @@ function generateMarkdown(data) {
   -[Testing]($testing)
   -[Contact Information]($contact-information)
 
-  
+  ## Description
+  $(data.Description)
+  ## Usage
+  $(data.Usage)
+  ## Installation
+  $(data.Installation)
+  ## Contribution
+  $(data.Contribution)
+  ## License
+  $(data.License)
+  ## Testing
+  $(data.Testing)
+  ## Contact Information
+  -Email: [${data.Email}](mailto:user@example.com)
 
 `;
 }
