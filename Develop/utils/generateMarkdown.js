@@ -1,15 +1,9 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  let licenseBadgeOutput = ""
-  let licenseLink = []
-  for(var 1 = 0; i<license.license.length;i++)
-  {
-    if(i == license.license.length-1)
-    comma = ""
-    
-  }
+  return '# ${data.License}'
 }
+
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
