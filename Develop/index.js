@@ -64,7 +64,6 @@ const questions = [
                     }
                 },
 
-                {
                     {
                         type: 'input',
                         name: 'Contribution',
@@ -77,8 +76,8 @@ const questions = [
                                 return false;
                             }
                             }
-                        }
-                    },
+                        },
+                
 
                     {
                         type: 'list',
@@ -112,7 +111,7 @@ const questions = [
                                 if (your_Test) {
                                     return true;
                                 } else {
-                                    console.log('Explain how its tested');
+                                    console.log('Explain how its tested')
                                     return false;
                                 }
                                 }
@@ -126,11 +125,12 @@ const questions = [
                                     if (email_input) {
                                         return true;
                                     } else {
-                                        console.log('Enter Email');
+                                        console.log('Enter Email')
                                         return false;
                                     }
                                 }
                             },
+                        ];
 // TODO: Create a functio,n to write README file
 function writeToFile(fileName, data) {}
 
