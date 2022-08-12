@@ -78,7 +78,7 @@ const questions = [
                             }
                             }
                         }
-                    };
+                    },
 
                     {
                         type: 'list',
@@ -102,7 +102,35 @@ const questions = [
                                 return false;
                             }
                             }
-                        };
+                        },
+
+                        {
+                            type: 'input',
+                            name: 'Test',
+                            message: 'How can I test your project?',
+                            validate: your_Test => {
+                                if (your_Test) {
+                                    return true;
+                                } else {
+                                    console.log('Explain how its tested');
+                                    return false;
+                                }
+                                }
+                            },
+
+                            {
+                                type: 'input',
+                                name: 'Email',
+                                message: 'Provide Email.',
+                                validate: email_input => {
+                                    if (email_input) {
+                                        return true;
+                                    } else {
+                                        console.log('Enter Email');
+                                        return false;
+                                    }
+                                }
+                            },
 // TODO: Create a functio,n to write README file
 function writeToFile(fileName, data) {}
 
