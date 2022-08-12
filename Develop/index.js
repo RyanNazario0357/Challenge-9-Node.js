@@ -35,19 +35,6 @@ const questions = [
             }
     },
 
-    {
-        type: 'input',
-        name: 'Installation',
-        message: 'How can I install your project?',
-        validate: your_Installation => {
-            if (your_Installation) {
-                return true;
-            } else {
-                console.log('Please enter the steps on how to install it.');
-                return false;
-            }
-            }
-        },
 
         {
         type: 'input',
@@ -62,7 +49,61 @@ const questions = [
             }
             }
             },
-// TODO: Create a function to write README file
+
+            {
+                type: 'input',
+                name: 'Installation',
+                message: 'How can I install your project?',
+                validate: your_Installation => {
+                    if (your_Installation) {
+                        return true;
+                    } else {
+                        console.log('Please enter the steps on how to install it.');
+                        return false;
+                    }
+                    }
+                },
+
+                {
+                    {
+                        type: 'input',
+                        name: 'Contribution',
+                        message: 'How can I contribute to this project?',
+                        validate: your_Contribution => {
+                            if (your_Contribution) {
+                                return true;
+                            } else {
+                                console.log('Explain how users can contribute.');
+                                return false;
+                            }
+                            }
+                        }
+                    };
+
+                    {
+                        type: 'list',
+                        name: 'License',
+                        message: 'Pick a License',
+                        choices: [
+                            {
+                                name: 'CC0 1.0',
+                                value: '[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)'
+                            },
+                            {
+                                name: 'Apache 2.0',
+                                value: '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
+                            },
+                        ]
+                        validate: your_License => {
+                            if (your_License) {
+                                return true;
+                            } else {
+                                console.log('Choose a License');
+                                return false;
+                            }
+                            }
+                        };
+// TODO: Create a functio,n to write README file
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
