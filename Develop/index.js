@@ -118,6 +118,20 @@ const questions = [
 
   {
     type: 'input',
+    name: 'Github',
+    message: 'Provide Github.',
+    validate: Github_input => {
+      if (Github_input) {
+        return true;
+      } else {
+        console.log('Enter Github')
+        return false;
+      }
+    }
+  },
+
+  {
+    type: 'input',
     name: 'Email',
     message: 'Provide Email.',
     validate: email_input => {
