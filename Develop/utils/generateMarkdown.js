@@ -43,6 +43,7 @@ function generateMarkdown(data) {
   $(data.Testing)
   ## Contact Information
   -Email: [${data.Email}](mailto:user@example.com)
+  -Github: [${data.Github}](https://github.com/${data.Github})
 
 `;
 }
